@@ -12,6 +12,7 @@ bot = Bot()
 # 找到好友
 friend = bot.friends.search('被单')[0]
 print(friend)
+
 #
 # # 打印目标好友名称
 # print(friend)
