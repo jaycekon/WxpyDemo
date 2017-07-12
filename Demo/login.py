@@ -6,7 +6,10 @@ dear = bot.friends().search('被单')[0]
 
 print(dear)
 # 发送消息
-dear.send('发一条信息过来，文字的')
+dear.send('测试，不用理')
+
+# 给文件助手发送信息
+bot.file_helper.send('ceshi')
 
 
 # 监听消息
