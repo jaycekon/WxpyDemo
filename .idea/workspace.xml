@@ -2,12 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b68e2131-b78a-4110-9e55-297aa9178cab" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Demo/sender.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Demo/suppor.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/RabbitServices/__init__.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/RabbitServices/rabbitComsumer.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/RabbitServices/rabbitProductor.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/RabbitServices/wxSenderLogin.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -506,7 +500,14 @@
       <option name="project" value="LOCAL" />
       <updated>1499850857472</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="消息经过RabbitMq 进行传递">
+      <created>1500011593296</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1500011593296</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -547,7 +548,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Merge branch 'master' of https://github.com/jaycekon/WxpyDemo&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml" />
-    <option name="LAST_COMMIT_MESSAGE" value="Merge branch 'master' of https://github.com/jaycekon/WxpyDemo&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml" />
+    <MESSAGE value="消息经过RabbitMq 进行传递" />
+    <option name="LAST_COMMIT_MESSAGE" value="消息经过RabbitMq 进行传递" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
