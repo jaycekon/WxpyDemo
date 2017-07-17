@@ -1,12 +1,12 @@
 from wechat_sender import *
 from wxpy import *
 
-bot = Bot()
+bot = Bot(qr_path="qr.png")
 
-friend = bot.friends().search('被单')[0]
-group = bot.groups().search('409')[0]
+group = bot.groups().search('网银监控报警')[0]
 
-print(friend)
+print("微信登陆成功！进行网银监控报警功能！")
 print(group)
+
 #
-listen(bot, token='test', receivers=[friend, group])
+listen(bot, token='test', receivers=[group])
