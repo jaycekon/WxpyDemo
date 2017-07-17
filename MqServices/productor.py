@@ -1,6 +1,6 @@
 import redis
 
-pool = redis.ConnectionPool(host='10.201.3.18', port=6379, db=15, password='kntest%pw_@dk2')
+pool = redis.ConnectionPool(host='localhost', port=6379, db=15, password='***')
 r = redis.StrictRedis(connection_pool=pool)
 while True:
     inputs = input("publish:")

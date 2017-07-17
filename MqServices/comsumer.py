@@ -1,9 +1,9 @@
 import redis
 from wechat_sender import *
 
-sender = Sender(token='test', receivers='网银监控报警')
+sender = Sender(token='test', receivers='监控报警')
 
-pool = redis.ConnectionPool(host='10.201.3.18', port=6379, db=4, password='kntest%pw_@dk2')
+pool = redis.ConnectionPool(host='***', port=6379, db=4, password='***')
 r = redis.StrictRedis(connection_pool=pool)
 p = r.pubsub()
 p.subscribe('cardniu-monitor')
