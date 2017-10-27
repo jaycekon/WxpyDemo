@@ -7,6 +7,6 @@ friends = bot.friends()
 
 # 遍历输出好友名称
 for friend in friends:
-    print(friend)
+    print(friend.nick_name)
 
-
+bot.logout()

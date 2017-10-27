@@ -11,3 +11,6 @@ print(len(groups))
 # 遍历输出所有群
 for group in groups:
     print(group)
+
+
+bot.logout()

@@ -3,9 +3,9 @@ from wxpy import *
 # 普通登陆
 bot = Bot(cache_path=True)
 
-friend = ensure_one(bot.friends().search("陈大美女"))
+friend = ensure_one(bot.friends().search("网银监控报警"))
 
-group = ensure_one(bot.friends().search("网银监控报警"))
+group = ensure_one(bot.friends().search("wxpy分享"))
 
 
 # 消息接收监听器

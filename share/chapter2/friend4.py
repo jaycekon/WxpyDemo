@@ -11,3 +11,5 @@ weijie = ensure_one(friend)
 # print(friend.province)
 
 print(weijie.province + weijie.city)
+
+bot.logout()

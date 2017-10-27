@@ -2,6 +2,8 @@ from wxpy import *
 
 bot = Bot(cache_path=True)
 
+group = ensure_one(bot.groups().search("wxpy分享"))
+
 
 # 注册好友请求类消息
 @bot.register(msg_types=FRIENDS)
@@ -14,3 +16,7 @@ def auto_accept_friends(msg):
         # 或 new_friend = msg.card.accept()
         # 向新的好友发送消息
         new_friend.send('哈哈，我自动接受了你的好友请求')
+        group.add_members(new_friend)
+
+
+embed()

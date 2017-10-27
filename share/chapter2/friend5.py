@@ -8,3 +8,5 @@ friend = bot.friends().search("黄伟杰")
 weijie = ensure_one(friend)
 
 weijie.send('hello world')
+
+bot.logout()

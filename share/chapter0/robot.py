@@ -2,13 +2,11 @@ from wxpy import *
 
 bot = Bot()
 
-# 获取好友
-friend = bot.friends().search('黄伟杰')[0]
+friend = bot.friends().search('网银监控报警')[0]
 
 tuling = Tuling(api_key='80144c654b9846ed8b76c6f11cadfb3f')
 
 
-# 使用图灵机器人自动与指定好友聊天
 @bot.register(friend)
 def reply_my_friend(msg):
     print(msg)
