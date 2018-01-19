@@ -6,7 +6,7 @@ sender = Sender(token='test', receivers='监控报警')
 pool = redis.ConnectionPool(host='***', port=6379, db=4, password='***')
 r = redis.StrictRedis(connection_pool=pool)
 p = r.pubsub()
-p.subscribe('cardniu-monitor')
+p.subscribe('monitor')
 for item in p.listen():
     print(item)
     if item['type'] == 'message':
@@ -15,5 +15,5 @@ for item in p.listen():
         sender.send(message=data)
         if item['data'] == 'over':
             break
-p.unsubscribe('cardniu-monitor')
+p.unsubscribe('monitor')
 print('取消订阅')
